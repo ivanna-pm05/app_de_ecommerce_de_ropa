@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Encode Sans", sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,0.5fr);
+    grid-template-rows: repeat(10,0.6fr);
+    width: 90%;
+    height: 90%;
+    margin: 3%;
+}
+.iconos-principal{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    grid-column: span 2;
+    width: 100%;
+    height: 90%;
+}
+.flecha{
+    background-color: #ffffff;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 50%;
+    border: 1px solid #b3b2b2;
+}
+.flecha:hover{
+    background-color: #000000;
+    color: white;
+}
+.two-line{
+    background-color: #ffffff;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 50%;
+    border: 1px solid #b3b2b2;
+}
+.two-line:hover{
+    background-color: #000000;
+    color: white;
+}
+.img{
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    align-items: center;
+    grid-column: span 2;
+    grid-row: span 2;
+    width: 100%;
+    height: 95%;
+    img{
+        height: 50%;
+    }
+}
+.img-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    p{
+        color: gray;
+    }
+}
+.acciones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 5%;
+    h1{
+        margin-left: 60%;
+    }
+}
+
+.acciones1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 2%;
+    h1{
+        margin-left: 60%;
+    }
+}
+.cantidad {
+    display: flex;
+    gap: 10px;
+    grid-column: 2;
+}
+.punto{
+    position: relative;
+    top: -10px;
+}
+.cantidad button {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.cantidad button:hover{
+    background-color: #000000;
+    color: white;
+}
+
+h1 {
+    display: flex;
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 36%;
+}
+.information{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    grid-column: span 2;
+}
+.card{
+    display: flex;
+    align-items: center;
+    grid-column: span 2;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    width: 100%;
+    height: 50%;
+    gap: 10px;
+    padding-left: 25px;
+}
+.down-arrow{
+    margin-left: 30%;
+}
+.numeros {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 2;
+    width: 100%;
+    height: 0%;
+}
+.numero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+}
+.sub{
+    display: flex;
+    flex-direction: column;
+    grid-column: span 2;
+    width: 100%;
+    height: 40%;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+}
+.pay{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: rgb(7, 7, 7);
+    width: 90%;
+    height: 7%;
+    border-radius: 50px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    p{
+        margin-left: 45%;
+    }
+}
+@media (min-width: 1024px) {
+    .container{
+        width: 70%;
+        height: 70%;
+        background-color: rgb(253, 253, 253);
+        box-shadow: 2px 2px 8px;
+        border-radius: 30px;
+        margin-left: 15%;
+        align-items: center;
+        justify-content: center;
+    }
+    .iconos-principal{
+        align-items: center;
+        width: 80%;
+        margin-left: 10%;
+    }
+    .img{
+        margin-left: 10%;
+        height: 150%;
+        margin-top: 5%;
+
+    }
+    .information{
+        grid-column: 2;
+        margin-left: 25%;
+        margin-top: -87%;
+    }
+    .card{
+        grid-column: 2;
+        width: 70%;
+        height: 80%;
+        margin-left: 15%;
+        margin-top: -75%;
+    }
+    .numeros{
+        width: 50%;
+        margin-top: -77%;
+        grid-column: 2;
+        margin-left: 20%;
+    }
+    .sub{
+        width: 50%;
+        margin-top: -46%;
+        grid-column: 2;
+        margin-left: 20%;
+    }
+    .pay{
+        width: 30%;
+        position: absolute;
+        bottom: 35%;
+        grid-column: 1;
+        margin-left: -11%;
+    }
+}
