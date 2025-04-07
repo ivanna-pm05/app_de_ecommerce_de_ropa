@@ -1,202 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&display=swap');
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+/* Fuente global para todo el body */
+body {
     font-family: "Encode Sans", sans-serif;
 }
-*,
-*::after,
-*::before{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
 
-.html{
-    font-size: 62.5%;
-}
-
-.navbar input[type="checkbox"],
-.navbar .hamburger-lines{
-    display: none;
-}
-
-.container{
-    max-width: 1200px;
-    width: 70%;
-    margin: auto;
-}
-
-.navbar{
-    position: fixed;
-    width: 70%;
-    height: 10%;
-    top: 2%;
-    margin-left: 15%;
-    color: #000;
-    z-index: 100;
-}
-
-.navbar-container{
-    display: flex;
-    justify-content: space-between;
-    height: 64px;
-    align-items: center;
-}
-
-.menu-items{
-    order: 2;
-    display: flex;
-}
-.logo{
-    order: 1;
-    font-size: 2.3rem;
-}
-
-.menu-items li{
-    list-style: none;
-    margin-left: 1.5rem;
-    font-size: 1.3rem;
-}
-
-.navbar a{
-    color: #444;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease-in-out;
-}
-
-.navbar a:hover{
-    color: #117964;
-}
-
-@media (max-width: 768px){
-    .navbar{
-        opacity: 0.95;
-    }
-
-    .navbar-container input[type="checkbox"],
-    .navbar-container .hamburger-lines{
-        display: block;
-    }
-
-    .navbar-container{
-        display: block;
-        position: relative;
-        height: 64px;
-    }
-
-    .navbar-container input[type="checkbox"]{
-        position: absolute;
-        display: block;
-        height: 32px;
-        width: 30px;
-        top: 20px;
-        left: 20px;
-        z-index: 5;
-        opacity: 0;
-        cursor: pointer;
-    }
-
-    .navbar-container .hamburger-lines{
-        display: block;
-        height: 28px;
-        width: 35px;
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        z-index: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .navbar-container .hamburger-lines .line{
-        display: block;
-        height: 4px;
-        width: 100%;
-        border-radius: 10px;
-        background: #333;
-    }
-    
-    .navbar-container .hamburger-lines .line1{
-        transform-origin: 0% 0%;
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .navbar-container .hamburger-lines .line2{
-        transition: transform 0.2s ease-in-out;
-    }
-
-    .navbar-container .hamburger-lines .line3{
-        transform-origin: 0% 100%;
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .navbar .menu-items{
-        padding-top: 100px;
-        background: #fff;
-        height: 100vh;
-        max-width: 300px;
-        transform: translate(-150%);
-        display: flex;
-        flex-direction: column;
-        margin-left: -40px;
-        padding-left: 40px;
-        transition: transform 0.5s ease-in-out;
-        box-shadow:  5px 0px 10px 0px #aaa;
-        overflow: scroll;
-    }
-
-    .navbar .menu-items li{
-        margin-bottom: 1.8rem;
-        font-size: 1.1rem;
-        font-weight: 500;
-    }
-
-    .logo{
-        position: absolute;
-        top: 10px;
-        right: 15px;
-        font-size: 2.5rem;
-    
-    }
-
-    .navbar-container input[type="checkbox"]:checked ~ .menu-items{
-        transform: translateX(0);
-    }
-
-    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1{
-        transform: rotate(45deg);
-    }
-
-    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2{
-        transform: scaleY(0);
-    }
-
-    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3{
-        transform: rotate(-45deg);
-    }
-
-}
-
-@media (max-width: 500px){
-    .navbar-container input[type="checkbox"]:checked ~ .logo{
-        display: none;
-    }
-}
-.container{
+/* Contenedor principal en forma de grid */
+.container {
     display: grid;
-    grid-template-columns: repeat(2,0.5fr);
-    grid-template-rows: repeat(10,0.6fr);
+    grid-template-columns: repeat(2, 0.5fr); /* 2 columnas iguales */
+    grid-template-rows: repeat(10, 0.6fr); /* 10 filas iguales */
     width: 90%;
     height: 90%;
     margin: 3%;
 }
-.iconos-principal{
+
+/* Encabezado con iconos y título */
+.iconos-principal {
     display: flex;
     gap: 10px;
     align-items: center;
@@ -205,102 +30,135 @@ body{
     width: 100%;
     height: 90%;
 }
-.flecha{
+
+/* Estilo para el ícono de flecha */
+.flecha {
     background-color: #ffffff;
     text-decoration: none;
     color: #000000;
     border-radius: 50%;
     border: 1px solid #b3b2b2;
 }
-.flecha:hover{
+
+/* Hover en flecha: cambia a fondo negro y texto blanco */
+.flecha:hover {
     background-color: #000000;
     color: white;
 }
-.two-line{
+
+/* Estilo para ícono de menú */
+.two-line {
     background-color: #ffffff;
     text-decoration: none;
     color: #000000;
     border-radius: 50%;
     border: 1px solid #b3b2b2;
 }
-.two-line:hover{
+
+/* Hover en ícono de menú */
+.two-line:hover {
     background-color: #000000;
     color: white;
 }
-.img{
+
+/* Contenedor para cada producto */
+.img {
     display: flex;
     gap: 10px;
-    align-items: flex-start;
     align-items: center;
     grid-column: span 2;
     grid-row: span 2;
     width: 100%;
     height: 95%;
-    img{
+
+    /* Imagen del producto */
+    img {
         height: 50%;
     }
 }
+
+/* Texto de producto */
 .img-texto {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    p{
+
+    /* Subtítulo (ej: "T-Shirt") en gris */
+    p {
         color: gray;
     }
 }
+
+/* Acciones del producto (versión 1) */
 .acciones {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-left: 5%;
-    h1{
+
+    h1 {
         margin-left: 60%;
     }
 }
 
+/* Acciones del producto (versión 2) */
 .acciones1 {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-right: 2%;
-    h1{
+
+    h1 {
         margin-left: 60%;
     }
 }
+
+/* Controles de cantidad (botones + y -) */
 .cantidad {
     display: flex;
     gap: 10px;
     grid-column: 2;
 }
-.punto{
+
+/* Estilo para los tres puntos de opciones */
+.punto {
     position: relative;
     top: -10px;
 }
+
+/* Botones de cantidad */
 .cantidad button {
     padding: 5px 10px;
     border: 1px solid #ccc;
     background-color: #fff;
     border-radius: 50%;
 }
-.cantidad button:hover{
+
+/* Hover de botones de cantidad */
+.cantidad button:hover {
     background-color: #000000;
     color: white;
 }
 
+/* Estilo general para los "..." */
 h1 {
     display: flex;
     font-size: 30px;
     cursor: pointer;
     margin-right: 36%;
 }
-.information{
+
+/* Sección de información de envío */
+.information {
     display: flex;
     gap: 10px;
     align-items: center;
     justify-content: space-between;
     grid-column: span 2;
 }
-.card{
+
+/* Tarjeta de pago (Visa) */
+.card {
     display: flex;
     align-items: center;
     grid-column: span 2;
@@ -311,9 +169,13 @@ h1 {
     gap: 10px;
     padding-left: 25px;
 }
-.down-arrow{
+
+/* Flecha dentro de la tarjeta */
+.down-arrow {
     margin-left: 30%;
 }
+
+/* Contenedor de totales */
 .numeros {
     display: flex;
     flex-direction: column;
@@ -321,6 +183,8 @@ h1 {
     width: 100%;
     height: 0%;
 }
+
+/* Fila de información de total, envío y descuento */
 .numero {
     display: flex;
     justify-content: space-between;
@@ -328,21 +192,27 @@ h1 {
     width: 100%;
     padding: 10px 20px;
 }
-.sub{
+
+/* Subtotal final */
+.sub {
     display: flex;
     flex-direction: column;
     grid-column: span 2;
     width: 100%;
     height: 40%;
 }
-.total{
+
+/* Línea de total final */
+.total {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     padding: 10px 20px;
 }
-.pay{
+
+/* Botón de pagar */
+.pay {
     position: fixed;
     bottom: 0;
     left: 50%;
@@ -356,12 +226,16 @@ h1 {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
-    p{
+
+    /* Posición del texto dentro del botón */
+    p {
         margin-left: 45%;
     }
 }
+
+/* Media query para pantallas grandes (desktop) */
 @media (min-width: 1024px) {
-    .container{
+    .container {
         width: 70%;
         height: 70%;
         background-color: rgb(253, 253, 253);
@@ -371,42 +245,48 @@ h1 {
         align-items: center;
         justify-content: center;
     }
-    .iconos-principal{
+
+    .iconos-principal {
         align-items: center;
         width: 80%;
         margin-left: 10%;
     }
-    .img{
+
+    .img {
         margin-left: 10%;
         height: 150%;
         margin-top: 5%;
-
     }
-    .information{
+
+    .information {
         grid-column: 2;
         margin-left: 25%;
         margin-top: -87%;
     }
-    .card{
+
+    .card {
         grid-column: 2;
         width: 70%;
         height: 80%;
         margin-left: 15%;
         margin-top: -75%;
     }
-    .numeros{
+
+    .numeros {
         width: 50%;
         margin-top: -77%;
         grid-column: 2;
         margin-left: 20%;
     }
-    .sub{
+
+    .sub {
         width: 50%;
         margin-top: -46%;
         grid-column: 2;
         margin-left: 20%;
     }
-    .pay{
+
+    .pay {
         width: 30%;
         position: absolute;
         bottom: 35%;

@@ -20,6 +20,14 @@ body{
         top: 20px;
         right: 20px;
     }
+    img{
+        border-radius: 25px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
 }
 .grid-container{
     display: grid;
@@ -130,6 +138,34 @@ body{
         background-color: #ffffff;
         color: #000;
     }
+    .corazon3{
+        position: absolute;
+        left: 180px;
+        background-color: #000000;
+        color: #fffdfd;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        padding: 6px;
+        margin-top: 3%;
+    }
+    .corazon3:hover{
+        background-color: #ffffff;
+        color: #000;
+    }
+    .corazon4{
+        position: absolute;
+        left: 425px;
+        background-color: #000000;
+        color: #fffdfd;
+        border-radius: 50%;
+        padding: 5px;
+        margin-top: 3%;
+    }
+    .corazon4:hover{
+        background-color: #ffffff;
+        color: #000;
+    }
 }
 .barra {
     position: fixed;
@@ -178,7 +214,20 @@ body{
         justify-content: center;
     }
     .corazon{
-        bottom: 5px;
+        top: 330px;
+        margin-left: 8%;
+    }
+    .corazon2{
+        top: 323px;
+        margin-left: 12%;
+    }
+    .corazon3{
+        top: 343px;
+        margin-left: 54%;
+    }
+    .corazon4{
+        top: 310px;
+        margin-left: 59%;
     }
     .barra{
         width: 50%;

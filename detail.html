@@ -8,42 +8,58 @@
 </head>
 <body>
     <div class="grid-container">
+        <!-- Contenedor de imagen y botones flotantes -->
         <div class="grid-img">
+            <!-- Imagen del producto -->
             <img id="image" src="img/Product 1.png">
+            <!-- Ícono de corazón (me gusta/favorito) en SVG -->
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="corazon" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
             </svg>
+            <!-- Flecha para volver a la página anterior -->
             <a href="index.html">
                 <svg class="flecha" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 12 24">
                     <path fill="currentColor" fill-rule="evenodd" d="M10 19.438L8.955 20.5l-7.666-7.79a1.02 1.02 0 0 1 0-1.42L8.955 3.5L10 4.563L2.682 12z"/>
                 </svg>
             </a>
         </div>
+
+        <!-- Contenedor con nombre del producto, puntuación y selector de cantidad -->
         <div class="num-container">
-                <h2>Modern Light Clothes</h2>
-                    <div class="grid-num">
-                        <h4>⭐5.0</h4>
-                        <h5>(7.932 reviews)</h5>
-                    </div>
-                    <div class="one">
-                        <button class="btn" id="menos">-</button>
-                        <span class="counter">1</span>
-                        <button class="btn" id="mas">+</button>
-                    </div>
+            <h2>Modern Light Clothes</h2>
+            <!-- Estrellas y número de reseñas -->
+            <div class="grid-num">
+                <h4>⭐5.0</h4>
+                <h5>(7.932 reviews)</h5>
+            </div>
+            <!-- Controles para aumentar/disminuir cantidad -->
+            <div class="one">
+                <button class="btn" id="menos">-</button>
+                <span class="counter">1</span>
+                <button class="btn" id="mas">+</button>
+            </div>
         </div>
+
+        <!-- Descripción del producto con opción de expandir -->
         <div class="product-description">
+            <!-- Checkbox oculto para controlar la expansión -->
             <input type="checkbox" id="toggle-text">
+            <!-- Etiqueta que actúa como botón para expandir/ocultar texto -->
             <label for="toggle-text" class="descripción">
-              <p>
-                Urban and modern style: Discover this casual and trendy look, perfect for any occasion.
-                <strong><span class="read-more"> Read More...</span></strong>
-              </p>
-              <p class="extra">
-                The combination of an oversized t-shirt, comfy joggers, and stylish sneakers creates a versatile outfit, complemented by an elegant red crossbody bag. Dare to set the trend.
-              </p>
+                <p>
+                    Urban and modern style: Discover this casual and trendy look, perfect for any occasion.
+                    <strong><span class="read-more"> Read More...</span></strong>
+                </p>
+                <!-- Texto oculto que se muestra al activar el checkbox -->
+                <p class="extra">
+                    The combination of an oversized t-shirt, comfy joggers, and stylish sneakers creates a versatile outfit, complemented by an elegant red crossbody bag. Dare to set the trend.
+                </p>
             </label>
         </div>
+
+        <!-- Opciones de talla y color -->
         <div class="options">
+            <!-- Selector de tallas -->
             <div class="choose-option">
                 <h3>Choose Size</h3>
                 <div class="size-buttons">
@@ -53,6 +69,8 @@
                     <a class="size-button" href="#">XL</a>
                 </div>
             </div>
+
+            <!-- Selector de colores -->
             <div class="color-option">
                 <h3>Color</h3>
                 <div class="color-buttons">
@@ -62,10 +80,17 @@
                 </div>
             </div>
         </div>
+
+        <!-- Botón fijo para agregar al carrito -->
         <a class="comprar" href="checkout.html">
-            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
-            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-            </svg><strong>Add to Cart | $162.99 </strong><s class="discount"> $199.99</s></p>
+            <p>
+                <!-- Ícono del carrito de compras -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg>
+                <!-- Texto con precio actual y precio anterior tachado -->
+                <strong>Add to Cart | $162.99 </strong><s class="discount"> $199.99</s>
+            </p>
         </a>
     </div>
 </body>
