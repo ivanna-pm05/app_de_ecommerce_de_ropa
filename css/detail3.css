@@ -140,7 +140,7 @@ body{
     gap: 40px;
     padding: 4%;
     align-items: flex-start;
-    flex-wrap: wrap; /* para que no se rompa en pantallas pequeñas */
+    flex-wrap: wrap;
   }
   
   .choose-option {
@@ -190,7 +190,6 @@ body{
     text-align: center;
     padding: 5px 10px;
 } 
-  /* Colores para los botones de color */
   .color-button:nth-child(1) {
     background-color: grey;
     color: grey;

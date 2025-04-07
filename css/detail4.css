@@ -15,7 +15,8 @@ body{
     margin: 4%;
     img{
         border-radius: 30px;
-        width: 100%;
+        width: 60%;
+        height: 60%;
     }
 }
 .num-container{
@@ -238,8 +239,9 @@ body{
     #imge{
       grid-column: 1;
       width: 70%;
-      height: 80%;
+      height: 65%;
       margin: 10%;
+      margin-top: 5%;
   
     }
     .num-container{
@@ -262,7 +264,7 @@ body{
     }
     .corazon{
       margin-left: 30%;
-      margin-top: 6%;
+      margin-top: 3.5%;
     }
     .flecha4{
         margin-top: -50%;
@@ -271,7 +273,7 @@ body{
     .comprar{
       width: 30%;
       position: absolute;
-      bottom: 7%;
+      bottom: 18%;
       margin-left: 16%;
     }
 }
