@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -7,107 +6,88 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="grid-container">
-        <!-- Contenedor principal con clase grid-container -->
-        <div class="grid-text">
-            <!-- Sección de bienvenida -->
+    <div class="grid-container"><!-- Contenedor principal con clase grid-container -->
+        <div class="grid-text"> <!-- Sección de bienvenida con imagen y título -->
             <p>Hello, Welcome 👋</p>
             <img id="img1" src="img/winky.png">
-            <!-- Imagen de usuario o logo -->
             <h2>Winky Mercado</h2>
         </div>
-        <div class="search-container">
-            <!-- Contenedor de búsqueda -->
+        <div class="search-container"><!-- Sección del buscador con input y filtro -->
             <div class="search-wrapper">
-                <!-- Input de búsqueda -->
                 <input type="text" class="search-input" placeholder="Search Clothes...">
+                <!-- Ícono de filtros con SVG -->
                 <a href="#">
-                    <!-- Icono de filtro (SVG) -->
                     <svg id="icono" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sliders" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M11.5 3a.5.5 0 0 1-.5.5H10v1.55a1.5 1.5 0 0 1 0 2.9V14h1a.5.5 0 0 1 0 1h-1a1 1 0 0 1-1-1V7.95a1.5 1.5 0 0 1 0-2.9V3.5h-1a.5.5 0 0 1 0-1h1a1 1 0 0 1 1-1h1a.5.5 0 0 1 0 1h-1c-.276 0-.5.224-.5.5ZM4 8a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H3a.5.5 0 0 1 0-1h1v-5H3a.5.5 0 0 1 0-1h1Zm0-7a.5.5 0 0 1 .5.5H6a1 1 0 0 1 1 1v6.05a1.5 1.5 0 0 1 0 2.9V14a1 1 0 0 1-1 1H5a.5.5 0 0 1 0-1h1v-2.55a1.5 1.5 0 0 1 0-2.9V2.5H4.5a.5.5 0 0 1 0-1H6A.5.5 0 0 1 6 0H4a.5.5 0 0 1 0 1h.5Z"/>
+                        <path fill-rule="evenodd" d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1z"/>
                     </svg>
                 </a>
             </div>
         </div>
-        <div class="grid-itemprincipal">
-            <!-- Contenedor de categorías principales -->
-            <div class="grid-item">
-                <!-- Categoría: All Items -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-fill" viewBox="0 0 16 16">
-                    <path d="M1 2a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm0 8a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3zm9-8a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1V2zm0 8a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1v-3z"/>
-                </svg>
-                All Items
-            </div>
-            <div class="grid-item">
-                <!-- Categoría: Dress -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
-                    <path d="..."/>
-                </svg>
-                Dress
-            </div>
-            <div class="grid-item">
-                <!-- Categoría: T-Shirt -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-backpack2-fill" viewBox="0 0 16 16">
-                    <path d="..."/>
-                </svg>
-                T-Shirt
-            </div>
-            <div class="grid-item">
-                <!-- Categoría: Pants -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
-                    <path d="..."/>
-                </svg>
-                Pants
+        <div class="grid-itemprincipal"><!-- Menú de categorías principal con íconos -->
+            <div class="grid-item"><!-- Categoría: Todos los productos -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M8.5 11H5.563a2.5 2.5 0 0 1-2.5-2.5V5.564a2.5 2.5 0 0 1 2.5-2.5H8.5a2.5 2.5 0 0 1 2.5 2.5V8.5A2.5 2.5 0 0 1 8.5 11M5.563 4.064a1.5 1.5 0 0 0-1.5 1.5V8.5a1.5 1.5 0 0 0 1.5 1.5H8.5A1.5 1.5 0 0 0 10 8.5V5.564a1.5 1.5 0 0 0-1.5-1.5ZM18.436 11H15.5A2.5 2.5 0 0 1 13 8.5V5.564a2.5 2.5 0 0 1 2.5-2.5h2.934a2.5 2.5 0 0 1 2.5 2.5V8.5a2.5 2.5 0 0 1-2.498 2.5M15.5 4.064a1.5 1.5 0 0 0-1.5 1.5V8.5a1.5 1.5 0 0 0 1.5 1.5h2.934a1.5 1.5 0 0 0 1.5-1.5V5.564a1.5 1.5 0 0 0-1.5-1.5Zm-7 16.872H5.564a2.5 2.5 0 0 1-2.5-2.5V15.5a2.5 2.5 0 0 1 2.5-2.5H8.5a2.5 2.5 0 0 1 2.5 2.5v2.936a2.5 2.5 0 0 1-2.5 2.5M5.564 14a1.5 1.5 0 0 0-1.5 1.5v2.936a1.5 1.5 0 0 0 1.5 1.5H8.5a1.5 1.5 0 0 0 1.5-1.5V15.5A1.5 1.5 0 0 0 8.5 14Zm12.872 6.936H15.5a2.5 2.5 0 0 1-2.5-2.5V15.5a2.5 2.5 0 0 1 2.5-2.5h2.934a2.5 2.5 0 0 1 2.5 2.5v2.936a2.5 2.5 0 0 1-2.498 2.5M15.5 14a1.5 1.5 0 0 0-1.5 1.5v2.936a1.5 1.5 0 0 0 1.5 1.5h2.934a1.5 1.5 0 0 0 1.5-1.5V15.5a1.5 1.5 0 0 0-1.5-1.5Z" />
+                </svg>All Items</div>
+            <div class="grid-item"><!-- Categoría: Vestidos -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor">
+                        <path d="m15 4l-3 2l-3-2c-.586.51-1.93 1.293-1.997 2.146c-.029.37.126.571.435.975C8.112 8.002 9 8.521 9 10h6c0-1.48.888-1.998 1.562-2.879c.31-.404.464-.606.434-.975C16.93 5.293 15.587 4.509 15 4M9 4V2m6 2V2m-5.5 8h5m3.5 9c2 0 3-2.173 3-2.173c-2.825-1.836-4.5-3.993-5.413-5.622c-.347-.62-.521-.93-.755-1.068C14.598 10 14.285 10 13.659 10H10.34c-.626 0-.939 0-1.173.137s-.408.447-.755 1.068C7.5 12.834 5.825 14.99 3 16.827C3 16.827 4 19 6 19" />
+                        <path d="M13.706 14c.34.796 1.815 2.671 3.435 4.31c.597.605.896.907.855 1.42c-.04.512-.29.683-.79 1.025C16.07 21.53 14.336 22 12 22s-4.07-.469-5.207-1.245c-.5-.342-.75-.513-.79-1.025c-.04-.513.259-.815.856-1.42c1.62-1.639 3.096-3.514 3.435-4.31" />
+                    </g></svg>Dress</div>
+            <div class="grid-item"><!-- Categoría: Camisetas -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 4h3s0 3 3 3s3-3 3-3h3m0 7v8.4a.6.6 0 0 1-.6.6H6.6a.6.6 0 0 1-.6-.6V11m12-7l4.443 1.777a.6.6 0 0 1 .334.78l-1.626 4.066a.6.6 0 0 1-.557.377H18M6 4L1.557 5.777a.6.6 0 0 0-.334.78l1.626 4.066a.6.6 0 0 0 .557.377H6" />
+                </svg>T-Shirt</div>
+            <div class="grid-item"><!-- Categoría: Pantalones -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256">
+                    <path fill="currentColor" d="m221.89 214.26l-22-176A14 14 0 0 0 186 26H70a14 14 0 0 0-13.89 12.26l-22 176A14 14 0 0 0 48 230h40.69a14 14 0 0 0 13.57-10.56L128 120l25.73 99.44A14 14 0 0 0 167.31 230H208a14 14 0 0 0 13.89-15.74m-26.67-116.6A34.07 34.07 0 0 1 166.54 70h25.23ZM70 38h116a2 2 0 0 1 2 1.75L190.27 58H65.73L68 39.75A2 2 0 0 1 70 38m-5.77 32h25.23a34.07 34.07 0 0 1-28.68 27.66Zm26.4 146.49a2 2 0 0 1-1.94 1.51H48a2 2 0 0 1-2-2.25l13.25-105.88A46.07 46.07 0 0 0 101.6 70H122v25.24Zm118.87.83a2 2 0 0 1-1.5.68h-40.69a2 2 0 0 1-1.95-1.56L134 95.24V70h20.4a46.07 46.07 0 0 0 42.35 39.87L210 215.75a2 2 0 0 1-.5 1.57" />
+                </svg>Pants</div>
             </div>
         </div>
-        <div class="producto">
-            <!-- Contenedor de productos -->
-            <div class="grid-text">
-                <!-- Producto 1 -->
+        <div class="producto"><!-- Sección de productos destacados -->
+            <div class="grid-text"><!-- Producto 1 -->
                 <a href="detail.html">
                     <img src="/img/Product 1.png">
                 </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill corazon" viewBox="0 0 16 16">
-                    <path d="..."/>
+                <!-- Ícono de favorito -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="corazon" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
                 </svg>
                 <h2>Modern Light Clothes</h2>
                 <p>T-Shirt</p>
                 <h3>$212.99</h3>
                 <h4>⭐5.0</h4>
             </div>
-            <div class="grid-text">
-                <!-- Producto 2 -->
+            <div class="grid-text"><!-- Producto 2 -->
                 <a href="detail2.html">
                     <img src="img/Product 2.png">
                 </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill corazon2" viewBox="0 0 16 16">
-                    <path d="..."/>
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="corazon2" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
                 </svg>
                 <h2>Ligt Dress Bless</h2>
                 <p>Dress modern</p>
                 <h3>$162.99</h3>
                 <h4>⭐5.0</h4>
             </div>
-            <div class="grid-text">
-                <!-- Producto 3 -->
+            <div class="grid-text"><!-- Producto 3 -->
                 <a href="detail3.html">
                     <img src="img/Product 3.png">
                 </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill corazon3" viewBox="0 0 16 16">
-                    <path d="..."/>
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="corazon3" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
                 </svg>
                 <h2>Black Leather Jacket</h2>
                 <p>Jacket</p>
                 <h3>$262.99</h3>
                 <h4>⭐5.0</h4>
             </div>
-            <div class="grid-text">
-                <!-- Producto 4 -->
+            <div class="grid-text"><!-- Producto 4 -->
                 <a href="detail4.html">
                     <img src="img/Product 4.png">
                 </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill corazon4" viewBox="0 0 16 16">
-                    <path d="..."/>
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="corazon4" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
                 </svg>
                 <h2>Yellow Formal Dress</h2>
                 <p>Dress</p>
@@ -115,28 +95,17 @@
                 <h4>⭐5.0</h4>
             </div>
         </div>
-        <div class="barra">
-            <!-- Barra de navegación inferior -->
+        <div class="barra"><!-- Barra inferior de navegación -->
+            <!-- Botón Home -->
+            <a href="#" class="barra-icons"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><g class="home-outline"><path fill="currentColor" fill-rule="evenodd" d="M10.033 2.883a3 3 0 0 1 3.934 0l7 6.076A3 3 0 0 1 22 11.225V19a3 3 0 0 1-3 3h-3.5a1.5 1.5 0 0 1-1.5-1.5v-6.813h-4V20.5A1.5 1.5 0 0 1 8.5 22H5a3 3 0 0 1-3-3v-7.775a3 3 0 0 1 1.033-2.266zm2.623 1.51a1 1 0 0 0-1.312 0l-7 6.077a1 1 0 0 0-.344.755V19a1 1 0 0 0 1 1h3v-6.313a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2V20h3a1 1 0 0 0 1-1v-7.775a1 1 0 0 0-.345-.755z" class="Vector (Stroke)" clip-rule="evenodd"/></g></svg></a>
+            <!-- Botón de carrito o compras -->
+            <a href="#" class="barra-icons"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M320 320H192M80 176a16 16 0 0 0-16 16v216c0 30.24 25.76 56 56 56h272c30.24 0 56-24.51 56-54.75V192a16 16 0 0 0-16-16Zm80 0v-32a96 96 0 0 1 96-96h0a96 96 0 0 1 96 96v32"/></svg></a>
+            <!-- Botón de favoritos o likes -->
+            <a href="#" class="barra-icons"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M5.624 4.424C3.965 5.182 2.75 6.986 2.75 9.137c0 2.197.9 3.891 2.188 5.343c1.063 1.196 2.349 2.188 3.603 3.154q.448.345.885.688c.526.415.995.778 1.448 1.043s.816.385 1.126.385s.674-.12 1.126-.385c.453-.265.922-.628 1.448-1.043q.437-.344.885-.687c1.254-.968 2.54-1.959 3.603-3.155c1.289-1.452 2.188-3.146 2.188-5.343c0-2.15-1.215-3.955-2.874-4.713c-1.612-.737-3.778-.542-5.836 1.597a.75.75 0 0 1-1.08 0C9.402 3.882 7.236 3.687 5.624 4.424M12 4.46C9.688 2.39 7.099 2.1 5 3.059C2.786 4.074 1.25 6.426 1.25 9.138c0 2.665 1.11 4.699 2.567 6.339c1.166 1.313 2.593 2.412 3.854 3.382q.43.33.826.642c.513.404 1.063.834 1.62 1.16s1.193.59 1.883.59s1.326-.265 1.883-.59c.558-.326 1.107-.756 1.62-1.16q.396-.312.826-.642c1.26-.97 2.688-2.07 3.854-3.382c1.457-1.64 2.567-3.674 2.567-6.339c0-2.712-1.535-5.064-3.75-6.077c-2.099-.96-4.688-.67-7 1.399" clip-rule="evenodd"/></svg></a>
 
-            <a href="#" class="barra-icons">
-                <!-- Ícono Home -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
-                    <path d="..."/>
-                </svg>
-            </a>
-            <a href="#" class="barra-icons">
-                <!-- Ícono de carrito o compras -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
-                    <path d="..."/>
-                </svg>
-            </a>
-            <a href="#" class="barra-icons">
-                <!-- Ícono de favoritos -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                    <path d="..."/>
-                </svg>
-            </a>
+            <a href="#" class="barra-icons"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 16 16"><path fill="currentColor" d="M11.5 8A1.5 1.5 0 0 1 13 9.5v.5c0 1.971-1.86 4-5 4s-5-2.029-5-4v-.5A1.5 1.5 0 0 1 4.5 8zm0 1h-7a.5.5 0 0 0-.5.5v.5c0 1.438 1.432 3 4 3s4-1.562 4-3v-.5a.5.5 0 0 0-.5-.5M8 1.5A2.75 2.75 0 1 1 8 7a2.75 2.75 0 0 1 0-5.5m0 1A1.75 1.75 0 1 0 8 6a1.75 1.75 0 0 0 0-3.5"/></svg></a></div>
         </div>
     </div>
+        
 </body>
 </html>
